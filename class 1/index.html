@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body class="bg-[#0a0a0a] flex items-center justify-center h-screen font-mono">
+        <div style="box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;"
+         class=" border  text-white px-8 py-9 rounded-lg     text-center w-[400px]">
+            <h1 class="text-2xl font-bold mb-4 text-[36px] "> Stop Watch</h1>
+            <div class="text-4xl font-mono mb-4 flex justify-center">
+               
+
+                <h5 id="Min" class="mx-9 text-[24px] w-9">0</h5>
+                <h5 id="Sec" class="mx-9 text-[24px] w-9">0</h5>
+                <h5 id="Msec" class="mx-9 text-[24px] w-9">0</h5>
+            </div>
+            <div class="flex justify-around mb-6">
+                <div>
+                    <div class="text-sm ms-3 text-gray-600">Minutes</div>
+                </div>
+                <div>
+                    <div class="text-sm ms-3 text-gray-600" >   Seconds</div>
+                </div>
+                <div>
+                    <div class="text-sm  text-gray-600">Centiseconds</div>
+                </div>
+            </div>
+            <div class="flex justify-center space-x-4">
+                <button onclick="Start()" id="stopBtn"  class="bg-teal-950 text-white px-3 py-1 rounded ">Start</button>
+
+                <button onclick="Stop()" class="bg-teal-950 text-white px-3 py-1 rounded ">Pause</button>
+                <button onclick="Reset()" class="bg-teal-950 text-white px-3 py-1 rounded">Reset</button>
+            </div>
+           
+        </div>
+    <script src="app.js"></script>
+</body>
+</html>
