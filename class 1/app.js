@@ -19,7 +19,7 @@ function Start(){
         js_sec++
         Sec.innerHTML = js_sec;
         js_msec = 0
-    }else if (js_sec >= 5) {
+    }else if (js_sec >= 60) {
         js_min++
         Min.innerHTML = js_min;
         js_sec = 0
